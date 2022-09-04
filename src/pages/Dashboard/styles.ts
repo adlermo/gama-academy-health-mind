@@ -5,7 +5,8 @@ export const Container = styled.div`
   justify-content: center;
   height: 100vh;
 
-  backgroud-color: #457b9d;
+  background-color: #457b9d;
+  color: white;
 
   display: flex;
 `;
