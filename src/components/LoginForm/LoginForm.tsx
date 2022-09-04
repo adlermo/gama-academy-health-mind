@@ -1,24 +1,33 @@
 import React, { useCallback, useState, FormEvent } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { api } from '../../services/api';
 
 import { Form } from './styles';
 
 interface IUser {
   email: string;
-  senha?: string;
+  password: string;
 }
 
 const LoginForm: React.FC = () => {
   const [user, setUser] = useState<IUser>({} as IUser);
 
+  const navigate = useNavigate();
+
   const handleSubmit = useCallback(
     async (e: FormEvent<HTMLFormElement>) => {
       e.preventDefault();
-      let result = await api.post(`therapists`, user);
-      console.log(result);
+      let result = await api.post(`login`, user);
+
+      if (result.status === 200) {
+        alert('Usuário Autenticado');
+        console.info(result.data);
+        sessionStorage.setItem('therapistId', result.data.id_therapist);
+
+        navigate('../dashboard');
+      }
     },
-    [user]
+    [user, navigate]
   );
 
   return (
@@ -30,6 +39,12 @@ const LoginForm: React.FC = () => {
           type="email"
           placeholder="Entre com seu email"
           onChange={(e) => setUser({ ...user, email: e.target.value })}
+        />
+
+        <input
+          type="password"
+          placeholder="Digita sua senha legal"
+          onChange={(e) => setUser({ ...user, password: e.target.value })}
         />
 
         <input type="submit" value="Entrar" />
