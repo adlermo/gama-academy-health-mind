@@ -20,9 +20,9 @@ Existem duas formas de utilizar o projeto apresentado:
 
 1. Executar localmente:
 
-    - Em um terminal execute o comando ```git clone https://github.com/adlermo/healthy-mind-api.git```
+    - Em um terminal execute o comando ```git clone https://github.com/adlermo/gama-healthy-mind.git```
         
-    - Após entrar no projeto ```cd healthy-mind-api```, cole o comando de sua preferência ```npm i``` ou ```yarn install```
+    - Após entrar no projeto ```cd gama-healthy-mind```, cole o comando de sua preferência ```npm i``` ou ```yarn install```
 
     - Executar o comando de inicialização ```yarn start``` ou ```npm start```.
 
