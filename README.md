@@ -30,7 +30,7 @@ Existem duas formas de utilizar o projeto apresentado:
 
 2. Utilizar a URL disponível:
 
-A [aplicação no Github Pages](https://adlermo.github.io/login) está disponível para consumo imediato.
+A [aplicação no Github Pages](https://adlermo.github.io/gama-healthy-mind) está disponível para consumo imediato.
 
 
 ## Learn More
