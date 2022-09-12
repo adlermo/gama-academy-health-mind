@@ -4,8 +4,9 @@
 
 Deve ser criado uma aplicação React contemplando os seguintes requisitos:
 
- - [ ] tela de operações CRUD de profissionais
- - [ ] tela de operações CRUD de pacientes (autenticado),
+ - [x] tela de login e registro de profissionais,
+ - [ ] configurações e atualização de perfil de profissional,
+ - [ ] tela de gerenciamento de pacientes (autenticado),
  - [ ] agendamento de _sessão_,
  - [ ] e exibição do _histórico clínico_ do paciente.
 
