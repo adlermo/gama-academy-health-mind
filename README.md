@@ -13,27 +13,26 @@ Deve ser criado uma aplicação React contemplando os seguintes requisitos:
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+------
 
-In the project directory, you can run:
+## Para utilizar a API
 
-### `yarn start`
+Existem duas formas de utilizar o projeto apresentado:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+1. Executar localmente:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+    - Em um terminal execute o comando ```git clone https://github.com/adlermo/gama-healthy-mind.git```
+        
+    - Após entrar no projeto ```cd gama-healthy-mind```, cole o comando de sua preferência ```npm i``` ou ```yarn install```
 
-### `yarn build`
+    - Executar o comando de inicialização ```yarn start``` ou ```npm start```.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    - Abrir [http://localhost:3000](http://localhost:3000) para visualizar no browser
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. Utilizar a URL disponível:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+A [aplicação no Github Pages](https://adlermo.github.io/gama-healthy-mind) está disponível para consumo imediato.
+
 
 ## Learn More
 
